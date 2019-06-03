@@ -16,6 +16,12 @@ var capLast = function () {
   return capital;
  }
 
+var firstLast = function (capLast, firstLetter) {
+  return firstLetter(sentence) + capLast(lastLetter);
+}
 
+var lastFirst = function (capLast, firstLetter) {
+  return capLast(lastLetter) + firstLetter(sentence);
+}
 
-alert(capLast(lastLetter));
+alert(lastFirst (capLast, firstLetter));
